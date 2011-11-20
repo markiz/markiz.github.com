@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/stylesheets/normalize.css">
     <link rel="stylesheet" href="/stylesheets/960.css">
     <link rel="stylesheet" href="/stylesheets/custom.css">
+    <link rel="stylesheet" href="/stylesheets/syntax.css">
   </head>
 
   <body class>
@@ -15,13 +16,31 @@
       <h2>{{page.title}}</h2>
       <date>Submitted on: {{page.date | date_to_long_string }}</date>
       {{content}}
+
+      <div id="comments">
+        <h3>Comments:</h3>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_shortname = 'xentroniumme';
+          var disqus_developer = 0;
+          var disqus_identifier = "post_{{page.title}}";
+          var disqus_url = window.location.href;
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+
     </div><aside id="sidebar" class="grid_4">
       <h2>See also</h2>
       <ul class='see-also'>
         <li><a href="/">Posts index</a></li>
       </ul>
     </aside></div>
-
     <div id="footer" class="container_12"><p class="grid_8">All the content is <a href="http://wiki.creativecommons.org/CC0_FAQ">CC0</a> licensed.</p></div>
   </body>
 </html>
