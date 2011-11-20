@@ -1,4 +1,5 @@
 markdown: maruku
+pygments: true
 exclude:
   - .rvmrc
   - .watchr
