@@ -21,7 +21,16 @@ Here is definition of Church numerals in scheme:
 It's not immediately obvious, but `i`-th Church Numeral applies given function to
 the argument exactly `i` times.
 
-Addition and multiplication on Church numerals are not difficult:
+Example:
+
+{% highlight scheme %}
+(define one (add-one zero))
+(define two (add-one one))
+(define (inc x) (+ x 1))
+((two inc) 4) ;; 6
+{% endhighlight %}
+
+Addition and multiplication on Church numerals are not too difficult:
 
 {% highlight scheme %}
 (define (church-add n k)
