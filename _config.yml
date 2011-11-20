@@ -3,3 +3,4 @@ pygments: true
 exclude:
   - .rvmrc
   - .watchr
+  - CNAME
