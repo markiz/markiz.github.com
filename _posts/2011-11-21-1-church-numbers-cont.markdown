@@ -68,4 +68,9 @@ Now, `church-div` may not be the most efficient solution but at least it works:
 So we have `+`, `-`, `/`, `*`, whole arithmetics package, using only lambdas.
 Now I need a proper excuse to use it somewhere...
 
+
+
+_I would also like to thank Druu for his help with tricky `church-prev`_.
+
+
 [previous post]: /2011/11/20/2-church-numbers.html
