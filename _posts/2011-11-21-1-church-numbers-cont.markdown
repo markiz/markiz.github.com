@@ -53,8 +53,7 @@ will return true for cases when `k` is greater than `n`.
   ((k church-prev) n))
 {% endhighlight %}
 
-Now, `church-div` may not be the most efficient solution, and it may recurse into
-oblivion, but at least it works:
+Now, `church-div` may not be the most efficient solution but at least it works:
 
 {% highlight scheme %}
 (define (church-div n k)
