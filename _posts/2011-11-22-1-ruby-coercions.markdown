@@ -36,4 +36,4 @@ end
 {% endhighlight %}
 
 Good news is that this behavior was removed in 1.9. Bad news is that 1.8
-ruby is still too popular to not think about.
+ruby is still too popular not to think about.
