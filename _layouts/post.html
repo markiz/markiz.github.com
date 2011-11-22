@@ -17,23 +17,6 @@
         <h2>{{page.title}}</h2>
         <date>Submitted on: {{page.date | date_to_long_string }}</date>
         {{content}}
-
-        <div id="comments">
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-            var disqus_shortname = 'xentroniumme';
-            var disqus_developer = 0;
-            var disqus_identifier = "post_{{page.title}}";
-            var disqus_url = window.location.href;
-
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-          </script>
-        </div>
       </article>
       <aside id="sidebar" class="grid_4">
         <h2>See also</h2>
@@ -41,6 +24,22 @@
           <li><a href="/">Posts index</a></li>
         </ul>
       </aside>
+      <div id="comments" class="grid_12">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_shortname = 'xentroniumme';
+          var disqus_developer = 0;
+          var disqus_identifier = "post_{{page.title}}";
+          var disqus_url = window.location.href;
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
     </div>
     <footer class="container_12">
       <div class="grid_10">All the content is <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>-licensed.</div>
