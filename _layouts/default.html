@@ -9,11 +9,20 @@
   </head>
 
   <body>
-    <div id="wrapper" class="container_12">
-      <h1><a href="/">Random musings</a></h1>
-      {{content}}
-    </div>
+    <header class="container_12"><h1><a href="/">Random musings</a></h1></header>
 
-    <div id="footer" class="container_12"><p class="grid_8">All the content is <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>-licensed.</p></div>
+    <article class="container_12">
+      {{content}}
+    </article>
+
+    <footer class="container_12">
+      <div class="grid_10">All the content is <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a>-licensed.</div>
+      <div class="grid_2">
+        <ul>
+          <li><a href='/feed.xml'>RSS feed</a></li>
+          <li><a href='http://github.com/markiz'>Author's github</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
